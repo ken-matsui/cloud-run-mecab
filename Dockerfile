@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
   && apt-get install -y python3 python3-pip curl git sudo cron swig \
@@ -13,11 +13,6 @@ RUN ./configure  --enable-utf8-only \
   && make check \
   && make install \
   && ldconfig
-
-WORKDIR /opt/mecab/mecab-ipadic
-RUN ./configure --with-charset=utf8 \
-  && make \
-  && make install
 
 WORKDIR /opt
 RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
