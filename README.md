@@ -64,11 +64,3 @@ $ curl -X POST http://localhost:5000/mecab/v1/parse-neologd \
   "status": 200
 }
 ```
-
-## フロントエンド
-
-ブラウザで`http://localhost:5001/`にアクセスします。
-
-### スクリーンショット
-
-![mecab.PNG](https://qiita-image-store.s3.amazonaws.com/0/141719/cdf400f7-9c95-9989-25e2-f731572feb37.png)
