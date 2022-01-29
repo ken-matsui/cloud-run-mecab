@@ -9,7 +9,7 @@ docker-composeコマンドだけで起動できるMeCabサービス
 ## How to Deploy
 
 ```bash
-gcloud run deploy mecab-service --source . --region us-west1 --no-allow-unauthenticated
+gcloud run deploy mecab-service --source . --region us-west1 --no-allow-unauthenticated --max-instances 1
 ```
 
 ## 実行方法
